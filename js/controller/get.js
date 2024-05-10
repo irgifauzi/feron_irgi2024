@@ -8,7 +8,7 @@ export function isiTablePresensi(results) {
 function isiRow(value){
     let content = 
     isiTabel.replace("#Id#", value._id)
-            .replace("#Nama Pemain#", value.nama)
+            .replace("#Nama#", value.nama)
             .replace("#Posisi#", value.posisi)
             .replace("#Tinggi#", value.tinggi)
             .replace("#Berat#", value.berat)
