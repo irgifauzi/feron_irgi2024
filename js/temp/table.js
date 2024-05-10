@@ -1,5 +1,6 @@
 export let isiTabel = `
   <tbody>
+    <thead>
         <tr>
             <th>#Id#</th>
             <th>#Nama#</th>
@@ -10,5 +11,6 @@ export let isiTabel = `
             <th>#Negara#</th>
             <th>#No Punggung#</th>
         </tr>
+    </thead>
     </tbody>   
 `;
