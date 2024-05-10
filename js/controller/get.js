@@ -17,10 +17,18 @@ function isiRow(value){
             .replace("#Negara#", value.negara)
             .replace("#No Punggung#", value.no_punggung );
             
-    addInner("iniTabel", content);
-}
-
-function clearTable() {
-    const tableBody = document.querySelector('#iniTabel tbody');
-    tableBody.innerHTML = ''; 
-}
+            const tableBody = document.querySelector('#iniTabel tbody');
+            if (tableBody) {
+              
+                let newRow = document.createElement('tr');
+                newRow.innerHTML = content; 
+                tableBody.appendChild(newRow); 
+            }
+        }
+        
+        function clearTable() {
+            const tableBody = document.querySelector('#iniTabel tbody');
+            if (tableBody) {
+                tableBody.innerHTML = ''; 
+            }
+        }
