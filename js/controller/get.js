@@ -1,7 +1,9 @@
 import { isiTabel } from "../temp/table.js";
 
+// Import fungsi clearTable jika diperlukan
+
 export function isiTablePresensi(results) {
-    clearTable();
+    clearTable(); // Panggil fungsi clearTable sebelum mengisi kembali tabel
     results.forEach(isiRow);
 }
 
@@ -15,6 +17,10 @@ function isiRow(value){
             .replace("#Tanggal Lahir#", value.tanggal_lahir)
             .replace("#Negara#", value.negara)
             .replace("#No Punggung#", value.no_punggung );
-            const tableBody = document.querySelector('#iniTabel tbody');
-            addInner("iniTabel", content);
+    const tableBody = document.querySelector('#iniTabel tbody');
+    addInner("iniTabel", content);
+}
+function clearTable() {
+    const tableBody = document.querySelector('#iniTabel tbody');
+    tableBody.innerHTML = ''; // Menghapus semua isi dari elemen tbody
 }
