@@ -1,4 +1,3 @@
-import { isiTabel } from "../temp/table.js";
 import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { isiTabel } from "../temp/table.js";
 
