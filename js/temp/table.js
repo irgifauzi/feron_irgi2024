@@ -1,6 +1,5 @@
 export let isiTabel = `
-<table>
-    <thead>
+  <tbody>
         <tr>
             <th>#Id#</th>
             <th>#Nama#</th>
@@ -11,19 +10,5 @@ export let isiTabel = `
             <th>#Negara#</th>
             <th>#No Punggung#</th>
         </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <!-- Tambahkan baris lain sesuai kebutuhan -->
-    </tbody>
-</table>
+    </tbody>   
 `;
