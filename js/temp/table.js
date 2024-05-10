@@ -3,7 +3,7 @@ export let isiTabel = `
     <thead>
         <tr>
             <th>#Id#</th>
-            <th>#Nama# Pemain</th>
+            <th>#Nama Pemain#</th>
             <th>#Posisi#</th>
             <th>#Tinggi#</th>
             <th>#Berat#</th>
