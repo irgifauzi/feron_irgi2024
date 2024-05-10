@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sepak bola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="../js/fetch.js"></script>
 </head>
@@ -13,7 +14,7 @@
         
         <div class="header-left">
             <div class="logo">
-                <img src="./logo1.png" alt="">
+                <img src="template/logo1.png" alt="">
             </div>
             <nav>
                 <ul>
@@ -50,37 +51,70 @@
         }
     </script>
 
+<div class="flex items-center justify-center h-screen bg-cover bg-center bg-fixed bg-no-repeat" style="background-image: url('https://i.pinimg.com/originals/82/5d/7e/825d7eca9190efcbccec61077a7d5f70.jpg');">
+    <h1 class="text-5xl font-extrabold text-center text-gray-900 dark:text-white">Selamat datang di website Bola </h1>
+</div>
 
-<section class="w-full" id="iniTabel">
-<table>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Nama</th>
-            <th>Posisi</th>
-            <th>Tinggi</th>
-            <th>Berat</th>
-            <th>Tanggal Lahir</th>
-            <th>Negara</th>
-            <th>No Punggung</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        
-        </tr>
-        <!-- Tambahkan baris lain sesuai kebutuhan -->
-    </tbody>
-</table>
-</section>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg" id="iniTabel">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    ID
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Nama
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Posisi
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Tinggi
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Berat
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Tanggal Lahir
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Negara
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    No Punggung
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    #Id
+                </th>
+                <td class="px-6 py-4">
+                    #Nama
+                </td>
+                <td class="px-6 py-4">
+                    #Posisi
+                </td>
+                <td class="px-6 py-4">
+                    #Tinggi
+                </td>
+                <td class="px-6 py-4">
+                    #Berat
+                </td>
+                <td class="px-6 py-4">
+                    #TanggalLahir
+                </td>
+                <td class="px-6 py-4">
+                    #Negara
+                </td>
+                <td class="px-6 py-4">
+                    #Negara
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 </body>
 </html>
