@@ -2,6 +2,7 @@ import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { isiTabel } from "../temp/table.js";
 
 export function isiTablePresensi(results) {
+    clearTable();
     results.forEach(isiRow);
 }
 
@@ -16,5 +17,10 @@ function isiRow(value){
             .replace("#Negara#", value.negara)
             .replace("#No Punggung#", value.no_punggung );
             
-            addInner("iniTabel", content);
+    addInner("iniTabel", content);
+}
+
+function clearTable() {
+    const tableBody = document.querySelector('#iniTabel tbody');
+    tableBody.innerHTML = ''; 
 }
