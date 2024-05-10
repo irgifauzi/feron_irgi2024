@@ -1,14 +1,12 @@
 export let isiTabel = `
-<tbody>
-  <tr>
+  </th>
     <th scope="row">#ID</th>
-    <td>#Nama Pemain</td>
-    <td>#Posisi</td>
-    <td>#Tinggi</td>
-    <td>#Berat</td>
-    <td>#Tanggal Lahir</td>
-    <td>#Negara</td>
-    <td>#No Punggung</td>
-  </tr>
-</tbody>
+    <th>#Nama Pemain</th>
+    <th>#Posisi</th>
+    <th>#Tinggi</th>
+    <th>#Berat</th>
+    <th>#Tanggal Lahir</th>
+    <th>#Negara</th>
+    <th>#No Punggung</th>
+  <th>
 `;
